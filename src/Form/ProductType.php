@@ -16,7 +16,7 @@ class ProductType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', TextType::class)
+            ->add('name', \Symfony\Component\Form\Extension\Core\Type\TextType::class)
             ->add('description', TextareaType::class)
             ->add('categories', EntityType::class, [
                 'class' => Category::class,
