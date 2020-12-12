@@ -15,3 +15,5 @@
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
 /docker/data/
+/docker/data/mysql/
+/docker/data/
