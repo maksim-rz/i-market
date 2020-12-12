@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0960211-196b-4302-a15d-2dbca8069796" name="Default Changelist" comment="">
+    <list default="true" id="d0960211-196b-4302-a15d-2dbca8069796" name="Default Changelist" comment="db off">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProductType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,8 +185,16 @@
       <workItem from="1607731639350" duration="290000" />
       <workItem from="1607732525171" duration="424000" />
       <workItem from="1607733081268" duration="2123000" />
-      <workItem from="1607735533572" duration="7062000" />
+      <workItem from="1607735533572" duration="8904000" />
     </task>
+    <task id="LOCAL-00001" summary="db off">
+      <created>1607775103718</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607775103719</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +210,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="db off" />
+    <option name="LAST_COMMIT_MESSAGE" value="db off" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
