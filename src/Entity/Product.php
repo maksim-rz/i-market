@@ -43,11 +43,17 @@ class Product
     private $categories;
 
     /**
+     * @ORM\OneToMany(targetEntity=OrderProduct::class, mappedBy="products")
+     */
+    private $orderProducts;
+
+    /**
      * Product constructor.
      */
     public function __construct()
     {
         $this->categories = new ArrayCollection();
+        $this->orderProducts = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -121,6 +127,36 @@ class Product
     public function removeCategory(Category $category): self
     {
         $this->categories->removeElement($category);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|OrderProduct[]
+     */
+    public function getOrderProducts(): Collection
+    {
+        return $this->orderProducts;
+    }
+
+    public function addOrderProduct(OrderProduct $orderProduct): self
+    {
+        if (!$this->orderProducts->contains($orderProduct)) {
+            $this->orderProducts[] = $orderProduct;
+            $orderProduct->setProducts($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOrderProduct(OrderProduct $orderProduct): self
+    {
+        if ($this->orderProducts->removeElement($orderProduct)) {
+            // set the owning side to null (unless already changed)
+            if ($orderProduct->getProducts() === $this) {
+                $orderProduct->setProducts(null);
+            }
+        }
 
         return $this;
     }

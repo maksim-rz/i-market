@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d0960211-196b-4302-a15d-2dbca8069796" name="Default Changelist" comment="+table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201210210551.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,6 +189,7 @@
       <workItem from="1607733081268" duration="2123000" />
       <workItem from="1607735533572" duration="33112000" />
       <workItem from="1607898811550" duration="1699000" />
+      <workItem from="1607901060868" duration="2635000" />
     </task>
     <task id="LOCAL-00001" summary="db off">
       <created>1607775103718</created>
