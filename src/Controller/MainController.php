@@ -25,7 +25,7 @@ class MainController extends AbstractController
     {
  //       $entityManager = $this->getDoctrine()->getManager();
         $product = new Product();
-        $form = $this->createForm(ProductType::class, $product, ['method' => Request::METHOD_POST]);
+        $form = $this->createForm(ProductType::class, $product);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
