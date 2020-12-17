@@ -21,9 +21,11 @@ class ProductType extends AbstractType
                 'required' =>'false'
             ])
             ->add('description', TextareaType::class)
-         //   ->add('categories', EntityType::class, [
-         //       'class' => Category::class,
-         //    ])
+  //          ->add('categories', EntityType::class, [
+   //             'class' => Category::class,
+   //             'choice_label' => 'name',
+
+   //          ])
             ->add('save', SubmitType::class )
             ;
 

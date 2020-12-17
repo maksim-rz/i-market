@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Add Category{% endblock %}
+
+{% block body %}
+    <style>
+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    </style>
+
+    <div class="example-wrapper">
+        <h1>Add Category</h1>
+
+    </div>
+    <div>
+        {{ form_start(categoryForm) }}
+        {{ form_row(categoryForm.name) }}
+        {{ form_end(categoryForm) }}
+    </div>
+
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+
+            <!--         <th scope="col">Categories</th>  -->
+            <th scope="col">action</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for category in categories %}
+            <tr>
+                <th scope="row">{{ category.id }}</th>
+                <td>{{ category.name }}</td>
+
+                <td><a href="{{ path('remove_category',{'category':category.id}) }}" class="btn btn-danger">Delete</a></td>
+
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+{% endblock %}
+

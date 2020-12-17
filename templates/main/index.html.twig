@@ -13,9 +13,16 @@
 
 </div>
     <div>
-        {{ form_start(form) }}
-        {{ form_widget(form) }}
-        {{ form_end(form) }}
+        {{ form_start(productForm) }}
+        {{ form_row(productForm.name) }}
+        {{ form_row(productForm.description) }}
+        {#{{ form_row(productForm.categories) }}#}
+        {{ form_row(productForm.save, {
+            label: 'Save Product'
+        })
+        }}
+
+        {{ form_end(productForm) }}
     </div>
 
     <table class="table">
@@ -24,7 +31,7 @@
             <th scope="col">Id</th>
             <th scope="col">Title</th>
             <th scope="col">Description</th>
-   <!--         <th scope="col">Categories</th>  -->
+           {# <th scope="col">Categories</th>#}
             <th scope="col">action</th>
 
         </tr>
@@ -35,6 +42,7 @@
             <th scope="row">{{ product.id }}</th>
             <td>{{ product.name }}</td>
             <td>{{ product.description }}</td>
+            {#<td>{{ product.categories }}</td>#}
             <td><a href="{{ path('remove_product',{'product':product.id}) }}" class="btn btn-danger">Delete</a></td>
 
         </tr>

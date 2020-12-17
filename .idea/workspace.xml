@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0960211-196b-4302-a15d-2dbca8069796" name="Default Changelist" comment="mig">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201213233715.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201213234103.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201213234321.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201213235245.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201213235540.php" afterDir="false" />
+    <list default="true" id="d0960211-196b-4302-a15d-2dbca8069796" name="Default Changelist" comment="+mig">
+      <change afterPath="$PROJECT_DIR$/templates/main/category.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProductType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +194,9 @@
       <workItem from="1607733081268" duration="2123000" />
       <workItem from="1607735533572" duration="33112000" />
       <workItem from="1607898811550" duration="1699000" />
-      <workItem from="1607901060868" duration="2940000" />
+      <workItem from="1607901060868" duration="3707000" />
+      <workItem from="1608140989497" duration="2618000" />
+      <workItem from="1608203606360" duration="14089000" />
     </task>
     <task id="LOCAL-00001" summary="db off">
       <created>1607775103718</created>
@@ -236,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607903827718</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="+mig">
+      <created>1607904128652</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607904128652</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +269,8 @@
     <MESSAGE value="db off" />
     <MESSAGE value="+table" />
     <MESSAGE value="mig" />
-    <option name="LAST_COMMIT_MESSAGE" value="mig" />
+    <MESSAGE value="+mig" />
+    <option name="LAST_COMMIT_MESSAGE" value="+mig" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

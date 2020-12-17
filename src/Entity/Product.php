@@ -8,6 +8,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
+
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ProductRepository", repositoryClass=ProductRepository::class)
  */
@@ -80,6 +81,10 @@ class Product
         return $this;
     }
 
+    public function __toString(){
+        return $this->name;
+    }
+
     /**
      * @return string|null
      */
@@ -107,6 +112,7 @@ class Product
         return $this->categories;
     }
 
+
     /**
      * @param Category $category
      * @return $this
@@ -130,6 +136,8 @@ class Product
 
         return $this;
     }
+
+
 
     /**
      * @return Collection|OrderProduct[]
