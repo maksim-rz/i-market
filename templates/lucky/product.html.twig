@@ -16,7 +16,14 @@
         {{ form_start(productForm) }}
         {{ form_row(productForm.name) }}
         {{ form_row(productForm.description) }}
-        {{ form_row(productForm.categories) }}
+        <h3>Categories</h3>
+        <ul class="categories" data-prototype="{{ form_widget(productForm.categories.vars.prototype)|e('html_attr') }}">
+            {% for category in productForm.categories %}
+                <li>{{ form_row(category.name) }}</li>
+            {% endfor %}
+        </ul>
+        <button type="button" class="add_item_link" data-collection-holder-class="tags">Add category</button>
+        {#{{ form_row(productForm.categories) }}#}
         {{ form_row(productForm.save, {
             label: 'Save Product'
         })

@@ -25,6 +25,13 @@ class MainController extends AbstractController
     {
  //       $entityManager = $this->getDoctrine()->getManager();
         $product = new Product();
+
+        $category1 = new Category();
+        $category1->setName('category1');
+        $product->getCategories()->add($category1);
+        $category2 = new Category();
+        $category2->setName('category2');
+        $product->getCategories()->add($category2);
         $form = $this->createForm(ProductType::class, $product);
         $form->handleRequest($request);
 
@@ -43,7 +50,7 @@ class MainController extends AbstractController
 
         
 
-        return $this->render('main/index.html.twig', [
+        return $this->render('lucky/product.html.twig', [
             'productForm' => $form->createView(),
             'products' => $products
 
@@ -69,54 +76,7 @@ class MainController extends AbstractController
 
     }
 
-    /**
-     * @Route("/add-category", name="addCategory")
-     * @param EntityManagerInterface $entityManager
-     * @param Request $request
-     * @return Response
-     */
-
-    public function addCategory(EntityManagerInterface $entityManager,Request $request): Response
-    {
-        //       $entityManager = $this->getDoctrine()->getManager();
-        $category = new Category();
-        $form = $this->createForm(CategoryType::class,$category,['method' => $request->getMethod()]);
-        $form->handleRequest($request);
-
-        if ($form->isSubmitted() && $form->isValid()) {
-            //           $data = $form->getData();
-            $entityManager->persist($category);
-            $entityManager->flush();
-
-            $this->addFlash('success','Done!');
-            return $this->redirect("/add-category");
-
-        }
-
-        $categoryRepository = $entityManager->getRepository(Category::class);
-        $categories = $categoryRepository->findAll();
-
-        return $this->render('main/category.html.twig',[
-            'categoryForm' => $form->createView(),
-            'categories' => $categories
-
-        ]);
-    }
-
-    /**
-     * @Route("/category-remove/{category}", name="remove_category")
-     * @param Category $category
-     * @param EntityManagerInterface $entityManager
-     * @return Response
-     */
-
-    public function remove_category(Category $category,EntityManagerInterface $entityManager): Response
-    {
-        $entityManager->remove($category);
-        $entityManager->flush();
-
-        return $this->redirectToRoute('addCategory');
 
 
-    }
+
 }

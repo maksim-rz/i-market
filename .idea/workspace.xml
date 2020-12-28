@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0960211-196b-4302-a15d-2dbca8069796" name="Default Changelist" comment="+category">
+    <list default="true" id="d0960211-196b-4302-a15d-2dbca8069796" name="Default Changelist" comment="+categоry error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ProductType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/category.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lucky/category.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lucky/product.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +151,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="credentialsType com.jetbrains.php.remote.interpreter.ui.PhpInplaceEditRemoteSdkForm" value="Docker Compose" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../php_ukraine_symfony_4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -166,6 +169,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/lucky" />
       <recent name="$PROJECT_DIR$/docker" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -193,7 +197,12 @@
       <workItem from="1607898811550" duration="1699000" />
       <workItem from="1607901060868" duration="3707000" />
       <workItem from="1608140989497" duration="2618000" />
-      <workItem from="1608203606360" duration="19205000" />
+      <workItem from="1608203606360" duration="21150000" />
+      <workItem from="1608551011200" duration="10133000" />
+      <workItem from="1608637534368" duration="47000" />
+      <workItem from="1608640339923" duration="311000" />
+      <workItem from="1608741800524" duration="2710000" />
+      <workItem from="1609154897384" duration="579000" />
     </task>
     <task id="LOCAL-00001" summary="db off">
       <created>1607775103718</created>
@@ -251,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608222730626</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="+categоry error">
+      <created>1608239037632</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608239037634</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +291,8 @@
     <MESSAGE value="mig" />
     <MESSAGE value="+mig" />
     <MESSAGE value="+category" />
-    <option name="LAST_COMMIT_MESSAGE" value="+category" />
+    <MESSAGE value="+categоry error" />
+    <option name="LAST_COMMIT_MESSAGE" value="+categоry error" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
