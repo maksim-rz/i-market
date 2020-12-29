@@ -25,13 +25,6 @@ class MainController extends AbstractController
     {
  //       $entityManager = $this->getDoctrine()->getManager();
         $product = new Product();
-
-        $category1 = new Category();
-        $category1->setName('category1');
-        $product->getCategories()->add($category1);
-        $category2 = new Category();
-        $category2->setName('category2');
-        $product->getCategories()->add($category2);
         $form = $this->createForm(ProductType::class, $product);
         $form->handleRequest($request);
 

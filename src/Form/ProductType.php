@@ -22,12 +22,12 @@ class ProductType extends AbstractType
                 'required' =>'false'
             ])
             ->add('description', TextareaType::class)
-            ->add('categories', CollectionType::class, [
+   /*         ->add('categories', CollectionType::class, [
                 'entry_type' => CategoryType::class,
                 'entry_options' => ['label' => false],
                 'allow_add' => true,
                 ]
-            )
+            )*/
 
             ->add('save', SubmitType::class )
             ;
